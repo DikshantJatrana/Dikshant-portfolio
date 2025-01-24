@@ -5,24 +5,33 @@ import { FaHome } from "react-icons/fa";
 import { FaIdCard } from "react-icons/fa";
 import { SiGoogledocs } from "react-icons/si";
 import { FaBriefcase } from "react-icons/fa";
+import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function Navbar() {
   const [value, setValue] = useState("home");
+
   const handleActive = (key) => {
     setValue(key);
+    const section = document.getElementById(key);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
+
   const NavbarRef = useRef();
   useGSAP(() => {
     gsap.from(NavbarRef.current, {
-      y: -70,
+      y: -80,
       duration: 1.7,
+      delay: 1.75,
       ease: "power1.inOut",
     });
   });
   return (
     <div
       ref={NavbarRef}
-      className="flex w-full h-20 hanken mt-2 items-center justify-center px-8"
+      className="flex w-full z-40 relative h-20 hanken pt-2 items-center justify-center px-8"
     >
       <div className="rounded-2xl py-2 backdrop:blur-sm px-2 flex gap-2 border-[1px] border-gray-400 text-gray-800 ">
         <span

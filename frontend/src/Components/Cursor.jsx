@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { GiNinjaStar } from "react-icons/gi";
 import { useGSAP } from "@gsap/react";
+import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const Cursor = () => {
   const cursorRef = useRef(null);
@@ -36,7 +38,7 @@ const Cursor = () => {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-10 h-10 rounded-full pointer-events-none z-10 transform -translate-x-1/2 -translate-y-1/2"
+      className="fixed top-0 left-0 w-16 h-16 rounded-full pointer-events-none z-10 transform -translate-x-1/2 -translate-y-1/2"
     >
       <img src="/imgs/Star.png" alt="star" />
     </div>

@@ -31,12 +31,37 @@
   font-family: "Anton";
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_24pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.inter-reg {
+  font-family: "Inter";
+}
+
 .text-style {
-  -webkit-text-stroke: 3px #fe5826;
+  -webkit-text-stroke: 1px #012849;
 }
 
 .glow {
   box-shadow: 0 0 100px #434040;
+}
+
+.card1 {
+  transform: rotateX(35deg) rotateY(10deg) rotateZ(-8deg);
+}
+.card1:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.card2 {
+  transform: rotateX(-30deg) rotateY(20deg) rotateZ(20deg);
+}
+.card2:hover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
 @layer base {
