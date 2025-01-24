@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import Cursor from "../Components/cursor";
+import Cursor from "../Components/Cursor";
 import About from "../Components/About";
 import Project from "../Components/Project";
 import Experience from "../Components/Experience";
