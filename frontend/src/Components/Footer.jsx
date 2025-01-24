@@ -15,7 +15,7 @@ const Footer = () => {
   };
   return (
     <footer className="bg-[#18181a] hanken z-20 relative px-6 text-gray-100 py-8">
-      <div className="border border-gray-500 rounded-xl  py-2">
+      <div className="border border-gray-500 rounded-xl py-2">
         <div className="max-w-6xl mx-auto flex flex-wrap px-3 justify-between gap-8">
           <div className="grid gap-7 grid-cols-4">
             <h3 className="text-[4vh] font-normal mb-4">
@@ -86,7 +86,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="space-y-4 text-[5vh]">
+            <div className="space-y-4 text-[4vh]">
               <div>
                 <a
                   href="mailto:dikshantjatrana02@gmail.com"

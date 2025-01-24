@@ -5,7 +5,6 @@ import About from "../Components/About";
 import Project from "../Components/Project";
 import Experience from "../Components/Experience";
 import Footer from "../Components/Footer";
-import SmoothScroll from "../Components/SmoothScroll";
 
 function Home() {
   return (
@@ -17,8 +16,8 @@ function Home() {
       <section id="about">
         <About />
       </section>
-      <Project />
       <section id="projects">
+        <Project />
         <Experience />
       </section>
       <Footer />

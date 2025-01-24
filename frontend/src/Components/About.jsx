@@ -185,12 +185,19 @@ function About() {
             <ul className="inter-reg text-[2vh]">
               <li>Pursuing B.Tech in Computer Science (Final Year).</li>
               <li>
-                Completed: CS50:
-                <li>Introduction to Computer Science. CS50 Python:</li>{" "}
+                Completed:
                 <li>
-                  Introduction to Programming with Python. CS50 Web Development:
+                  <b className="underline hanken">CS50</b>: Introduction to
+                  Computer Science.{" "}
                 </li>{" "}
-                <li>Building web applications.</li>
+                <li>
+                  <b className="underline hanken">CS50 Python</b>:Introduction
+                  to Programming with Python.{" "}
+                </li>{" "}
+                <li>
+                  <b className="underline hanken">CS50 Web Development:</b>
+                  Building web applications.
+                </li>
               </li>
             </ul>
           </div>
