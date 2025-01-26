@@ -22,7 +22,7 @@ const Footer = () => {
               Where <span className="text-purple-400">aesthetics</span> &{" "}
               <span className="text-cyan-400">functionality</span> meet
             </h3>
-            <div className="flex my-3 justify-between">
+            <div className="flex md:hidden my-3 justify-between">
               <div className="">
                 <h4 className="text-orange-500 text-[4vh] font-semibold mb-2">
                   Explore
