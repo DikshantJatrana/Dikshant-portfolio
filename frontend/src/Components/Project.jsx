@@ -35,7 +35,7 @@ function Project() {
   return (
     <div
       id="project"
-      className="w-full h-screen text-[15vh] flex items-center text-[#18181a] justify-center hanken relative overflow-hidden"
+      className="w-full h-screen text-[10vh] md:text-[15vh] flex items-center text-[#18181a] justify-center hanken relative overflow-hidden"
     >
       PROJECT
       <div

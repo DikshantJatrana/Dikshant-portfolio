@@ -3,8 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Experience() {
@@ -73,17 +72,17 @@ function Experience() {
       </div>
       <div
         id="projects-exp"
-        className="w-full min-h-screen  py-16 px-16 relative"
+        className="w-full min-h-screen py-3 px-3 md:py-16 md:px-16 relative"
       >
         <div
           id="one"
-          className="w-full h-[40vh] bg-[#f9a639] rounded-tl-3xl rounded-br-3xl grid grid-cols-2 gap-2"
+          className="w-full md:h-[40vh] h-[80vh] bg-[#f9a639] rounded-tl-3xl rounded-br-3xl grid sm:grid-row-2 md:grid-cols-2 gap-2"
         >
-          <div className="w-full h-full relative">
+          <div className="w-full h-[30vh] md:h-full md:relative">
             <img
               src="/imgs/uber.jpeg"
               alt="border"
-              className="rounded-lg absolute top-1/4 left-[4vw] card1 duration-300 transition-all ease-in-out"
+              className="rounded-lg absolute md:top-1/4 md:left-[4vw] card1 duration-300 transition-all ease-in-out"
             />
           </div>
           <div className="px-3">
@@ -109,7 +108,7 @@ function Experience() {
         </div>
         <div
           id="two"
-          className="w-full mt-[15vh] h-[40vh] bg-[#e4cfb9] rounded-bl-3xl rounded-tr-3xl grid grid-cols-2 gap-2"
+          className="w-full mt-[15vh] md:h-[40vh] h-[80vh] bg-[#e4cfb9] rounded-bl-3xl rounded-tr-3xl grid sm:grid-row-2 md:grid-cols-2 gap-2"
         >
           <div className="px-3">
             <h1 className="hanken text-[6vh] text-[#333326]">
@@ -133,23 +132,23 @@ function Experience() {
               Github Source
             </a>
           </div>
-          <div className="w-full h-full relative">
+          <div className="w-full h-[30vh] md:h-full md:relative">
             <img
               src="/imgs/kala.png"
               alt="border"
-              className="rounded-lg absolute top-1/4 left-[4vw] card2 duration-300 transition-all ease-in-out"
+              className="rounded-lg absolute md:top-1/4 md:left-[4vw] card2 duration-300 transition-all ease-in-out"
             />
           </div>
         </div>
         <div
           id="three"
-          className="w-full mt-[15vh] h-[40vh] bg-[#f6e836] rounded-tl-3xl rounded-br-3xl grid grid-cols-2 gap-2"
+          className="w-full mt-[15vh] md:h-[40vh] h-[80vh] bg-[#f6e836] rounded-tl-3xl rounded-br-3xl grid sm:grid-row-2 md:grid-cols-2 gap-2"
         >
-          <div className="w-full h-full relative">
+          <div className="w-full h-[30vh] md:h-full md:relative">
             <img
               src="/imgs/text.png"
               alt="border"
-              className="rounded-lg absolute top-1/4 left-[4vw] card1 duration-300 transition-all ease-in-out"
+              className="rounded-lg absolute md:top-1/4 md:left-[4vw] card1 duration-300 transition-all ease-in-out"
             />
           </div>
           <div className="px-3">
@@ -175,7 +174,7 @@ function Experience() {
         </div>
         <div
           id="four"
-          className="w-full mt-[15vh] mb-[15vh] h-[40vh] bg-[#fe5826] rounded-bl-3xl rounded-tr-3xl grid grid-cols-2 gap-2"
+          className="w-full mt-[15vh] mb-[15vh] md:h-[40vh] h-[80vh] bg-[#fe5826] rounded-bl-3xl rounded-tr-3xl grid sm:grid-row-2 md:grid-cols-2 gap-2"
         >
           <div className="px-3">
             <h1 className="hanken text-[6vh] text-[#333326]">Zentry-Clone</h1>
@@ -197,11 +196,11 @@ function Experience() {
               Github Source
             </a>
           </div>
-          <div className="w-full h-full relative">
+          <div className="w-full h-[30vh] md:h-full md:relative">
             <img
               src="/imgs/zentry.png"
               alt="border"
-              className="rounded-lg absolute top-1/4 left-[4vw] card2 duration-300 transition-all ease-in-out"
+              className="rounded-lg absolute md:top-1/4 md:left-[4vw] card2 duration-300 transition-all ease-in-out"
             />
           </div>
         </div>

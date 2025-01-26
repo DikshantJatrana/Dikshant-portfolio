@@ -3,8 +3,6 @@ import Navbar from "./Navbar";
 import Orbit from "./Orbit";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function Hero() {
   const dikshantRef = useRef();
@@ -45,26 +43,32 @@ function Hero() {
     <div className="w-full h-screen bg-[#e4cfb9] relative ">
       <Navbar />
       <div className="w-full flex items-center justify-center">
-        <div className="font-anton z-40 inline-block text-9xl absolute top-[20%] text-[#212121] ">
-          <div className="text-6xl flex justify-between items-end">
+        <div className="font-anton z-40 inline-block text-8xl md:text-9xl absolute top-[35%] md:top-[20%] text-[#212121] ">
+          <div className="text-4xl md:text-6xl flex justify-between items-end">
             <span ref={imRef}>I&apos;m </span>
-            <span ref={fullRef} className="text-4xl text-[#212121]">
+            <span ref={fullRef} className="text-xl md:text-4xl text-[#212121]">
               Full-stack Developer
             </span>
           </div>
-          <div className="inline-block overflow-hidden">
+          <div className="md:hidden">
+            <div ref={dikshantRef} className="opacity-1 flex flex-col">
+              <span>DIKSHANT</span>
+              <span>JATRANA</span>
+            </div>
+          </div>
+          <div className="hidden md:inline-block overflow-hidden">
             <div ref={dikshantRef} className="opacity-1">
               DIKSHANT JATRANA
             </div>
           </div>
         </div>
       </div>
-      <div className="h-[85%] z-10 glow aspect-square flex items-center justify-center bg-[#fe5826] rounded-full absolute left-1/2 -translate-x-1/2 -bottom-[20%]">
+      <div className="h-[65%] md:h-[85%] z-10 glow aspect-square flex items-center justify-center bg-[#fe5826] rounded-full absolute left-1/2 -translate-x-1/2 -bottom-[20%]">
         <div className="h-[80%] z-50 aspect-square">
           <img src="/imgs/sam.png" alt="samuria" />
         </div>
       </div>
-      <div className="h-[85%]  -bottom-[20%] z-10 aspect-square absolute left-1/2 -translate-x-1/2">
+      <div className="h-[65%] md:h-[85%]  -bottom-[20%] z-10 aspect-square absolute left-1/2 -translate-x-1/2">
         <Orbit />
       </div>
     </div>

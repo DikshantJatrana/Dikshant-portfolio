@@ -92,7 +92,7 @@ function About() {
 
   return (
     <div id="about" className="w-full min-h-screen py-8 bg-[#e4cfb9]  relative">
-      <div className="w-full h-screen px-20 py-8 mt-52 grid hanken gap-4 grid-cols-3 grid-row-6">
+      <div className="w-full h-screen hidden px-20 py-8 mt-52 md:grid hanken gap-4 grid-cols-3 grid-row-6">
         <div
           id="who"
           className="z-20 shadow-md bg-[#263238]/15 rounded-lg backdrop:blur-md col-span-2 row-span-2 relative"
@@ -180,6 +180,90 @@ function About() {
           id="education"
           className="z-20 shadow-md bg-[#263238]/10 rounded-lg backdrop:blur-md col-span-2 row-span-2 relative"
         >
+          <div className="absolute w-full h-full px-5 py-3">
+            <div className="text-[6vh] underline">Education</div>
+            <ul className="inter-reg text-[2vh]">
+              <li>Pursuing B.Tech in Computer Science (Final Year).</li>
+              <li>
+                Completed:
+                <li>
+                  <b className="underline hanken">CS50</b>: Introduction to
+                  Computer Science.{" "}
+                </li>{" "}
+                <li>
+                  <b className="underline hanken">CS50 Python</b>:Introduction
+                  to Programming with Python.{" "}
+                </li>{" "}
+                <li>
+                  <b className="underline hanken">CS50 Web Development:</b>
+                  Building web applications.
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="w-full md:hidden min-h-screen flex flex-col gap-8 hanken px-4 py-8 mt-56">
+        <div className="z-20 shadow-md bg-[#012849] rounded-lg backdrop:blur-md w-full h-[30vh] relative">
+          <div className="w-[18vh] aspect-square rounded-full bg-white absolute top-4 left-1/2 -translate-x-1/2 ">
+            <img
+              src="/imgs/user.png"
+              className="w-full h-full rounded-full"
+              alt=""
+            />
+          </div>
+          <a
+            href="https://github.com/DikshantJatrana"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white w-full absolute bottom-4 text-center text-[4vh] cursor-pointer hanken"
+          >
+            Dikshant Jatrana
+          </a>
+        </div>
+        <div className="z-20 shadow-md bg-[#e4cfb9]/90 rounded-lg backdrop:blur-md w-full h-[16vh] text-[5vh] text-[#fe5826] relative">
+          <span className="w-full h-full text-center top-2 absolute">
+            Student & Fullstack Developer
+          </span>
+        </div>
+        <div className="z-20 shadow-md bg-[#263238]/15 rounded-lg backdrop:blur-md w-full h-[45vh] relative">
+          <div className="w-full absolute h-full px-3 py-2">
+            <div className="text-[6vh] underline">Who am I?</div>
+            <p className="text-[2vh] inter-reg">
+              Hi! My name is Dikshant Jatrana, and I’m a final-year B.Tech
+              student in Computer Science from Haryana, India. I’m passionate
+              about coding and love working on projects that involve JavaScript,
+              Python, and Java. I’m also exploring the idea of starting an
+              agriculture-focused business that leverages technology to make a
+              positive impact. When I’m not coding, you can find me
+              brainstorming ideas or learning something new to keep growing as a
+              developer.
+            </p>
+          </div>
+        </div>
+        <div className="z-20 shadow-md bg-[#263238] rounded-lg backdrop:blur-md w-full h-[50vh] relative">
+          <div className="absolute w-full h-full p-3">
+            <div className="text-[4vh] text-white">
+              Technologies I have worked with
+            </div>
+            <div className="w-full grid grid-cols-4 gap-3">
+              <Icons imgSrc={"/imgs/python.png"} name={"Python"} />
+              <Icons imgSrc={"/imgs/java.png"} name={"Java"} />
+              <Icons imgSrc={"/imgs/javascript.png"} name={"JavaScript"} />
+              <Icons imgSrc={"/imgs/typescript.png"} name={"Typescript"} />
+              <Icons imgSrc={"/imgs/tailwind.png"} name={"Tailwind"} />
+              <Icons imgSrc={"/imgs/react.png"} name={"React"} />
+              <Icons imgSrc={"/imgs/postgres.png"} name={"PostgreSQL"} />
+              <Icons imgSrc={"/imgs/nodejs.png"} name={"Node js"} />
+              <Icons imgSrc={"/imgs/mongo.png"} name={"MongoDB"} />
+              <Icons imgSrc={"/imgs/firebase.png"} name={"Firebase"} />
+              <Icons imgSrc={"/imgs/docker.png"} name={"Docker"} />
+              <Icons imgSrc={"/imgs/figma.png"} name={"Figma"} />
+              <Icons imgSrc={"/imgs/supabase.png"} name={"Supabase"} />
+            </div>
+          </div>
+        </div>
+        <div className="z-20 shadow-md bg-[#263238]/10 rounded-lg backdrop:blur-md w-full h-[35vh] relative">
           <div className="absolute w-full h-full px-5 py-3">
             <div className="text-[6vh] underline">Education</div>
             <ul className="inter-reg text-[2vh]">

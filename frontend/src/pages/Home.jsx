@@ -16,8 +16,8 @@ function Home() {
       <section id="about">
         <About />
       </section>
+      <Project />
       <section id="projects">
-        <Project />
         <Experience />
       </section>
       <Footer />

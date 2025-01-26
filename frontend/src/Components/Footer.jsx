@@ -16,13 +16,79 @@ const Footer = () => {
   return (
     <footer className="bg-[#18181a] hanken z-20 relative px-6 text-gray-100 py-8">
       <div className="border border-gray-500 rounded-xl py-2">
-        <div className="max-w-6xl mx-auto flex flex-wrap px-3 justify-between gap-8">
-          <div className="grid gap-7 grid-cols-4">
-            <h3 className="text-[4vh] font-normal mb-4">
+        <div className="mx-auto flex flex-wrap px-3 justify-between gap-8">
+          <div className="flex flex-col md:grid gap-2 md:gap-7 md:grid-cols-4">
+            <h3 className="text-[2.9vh] md:text-[4vh] font-normal mb-0 md:mb-4">
               Where <span className="text-purple-400">aesthetics</span> &{" "}
               <span className="text-cyan-400">functionality</span> meet
             </h3>
-            <div>
+            <div className="flex my-3 justify-between">
+              <div className="">
+                <h4 className="text-orange-500 text-[4vh] font-semibold mb-2">
+                  Explore
+                </h4>
+                <ul className="space-y-2">
+                  <li>
+                    <span
+                      onClick={() => {
+                        handleActive("home");
+                      }}
+                      className="hover:text-white"
+                    >
+                      Home
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      onClick={() => {
+                        handleActive("about");
+                      }}
+                      className="hover:text-white"
+                    >
+                      About Me
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      onClick={() => {
+                        handleActive("projects");
+                      }}
+                      className="hover:text-white"
+                    >
+                      Projects
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className="">
+                <h4 className="text-cyan-400 text-[4vh] font-semibold mb-2">
+                  Follow Me
+                </h4>
+                <ul className="flex flex-col gap-4">
+                  <li>
+                    <a
+                      href="https://github.com/DikshantJatrana"
+                      target="__blank"
+                      className="flex items-center gap-2 hover:text-white"
+                    >
+                      <FaGithub />
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/Dikshant_J"
+                      target="__blank"
+                      className="flex items-center gap-2 hover:text-white"
+                    >
+                      <FaSquareXTwitter />
+                      Twitter
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="hidden md:flex md:flex-col">
               <h4 className="text-orange-500 text-[4vh] font-semibold mb-2">
                 Explore
               </h4>
@@ -59,7 +125,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="hidden md:flex md:flex-col">
               <h4 className="text-cyan-400 text-[4vh] font-semibold mb-2">
                 Follow Me
               </h4>
@@ -101,9 +167,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-[13.3vw]">dikshantjatrana</div>
+        <div className="text-[12.2vw] md:text-[13.3vw]">dikshantjatrana</div>
       </div>
-      <div className="mt-2 text-white  flex items-center justify-between text-center text-[3vh] text-sm">
+      <div className="mt-2 text-white  flex items-center justify-between text-center md:text-[3vh] text-sm">
         <span>
           DikshantJatrana ©2025 -{" "}
           <a href="#privacy" className="hover:text-white">
