@@ -52,7 +52,7 @@ function Navbar() {
         ref={NavbarRef}
         className="hidden md:flex w-full z-40 relative h-20 hanken pt-2 items-center justify-center px-8"
       >
-        <div className="rounded-2xl py-2 backdrop:blur-sm px-2 flex gap-2 border-[1px] border-gray-400 text-gray-800 ">
+        <div className="rounded-2xl py-2 backdrop:blur-sm px-2 flex gap-2 text-gray-800 ">
           <span
             onClick={() => {
               handleActive("home");
@@ -87,7 +87,7 @@ function Navbar() {
             Projects
           </span>
           <a
-            href="/DikshantJatrana-CV.PDF"
+            href="/DikshantJatrana-CV.pdf"
             download
             onClick={() => {
               handleActive("resume");

@@ -148,10 +148,10 @@ function About() {
           className="z-20 shadow-md bg-[#263238] rounded-lg backdrop:blur-md col-span-1 row-span-3 relative"
         >
           <div className="absolute w-full h-full p-3">
-            <div className="text-[4vh] text-white">
+            <div className="text-[4vh] text-white text-center">
               Technologies I have worked with
             </div>
-            <div className="w-full grid grid-cols-4 gap-3">
+            <div className="w-full grid grid-cols-4 gap-2">
               <Icons imgSrc={"/imgs/python.png"} name={"Python"} />
               <Icons imgSrc={"/imgs/java.png"} name={"Java"} />
               <Icons imgSrc={"/imgs/javascript.png"} name={"JavaScript"} />
@@ -165,6 +165,9 @@ function About() {
               <Icons imgSrc={"/imgs/docker.png"} name={"Docker"} />
               <Icons imgSrc={"/imgs/figma.png"} name={"Figma"} />
               <Icons imgSrc={"/imgs/supabase.png"} name={"Supabase"} />
+              <Icons imgSrc={"/imgs/next.png"} name={"NEXT.js"} />
+              <Icons imgSrc={"/imgs/blender.png"} name={"Blender"} />
+              <Icons imgSrc={"/imgs/graph.png"} name={"GraphQL"} />
             </div>
           </div>
         </div>
@@ -260,6 +263,9 @@ function About() {
               <Icons imgSrc={"/imgs/docker.png"} name={"Docker"} />
               <Icons imgSrc={"/imgs/figma.png"} name={"Figma"} />
               <Icons imgSrc={"/imgs/supabase.png"} name={"Supabase"} />
+              <Icons imgSrc={"/imgs/next.png"} name={"NEXT.js"} />
+              <Icons imgSrc={"/imgs/blender.png"} name={"Blender"} />
+              <Icons imgSrc={"/imgs/graph.png"} name={"GraphQL"} />
             </div>
           </div>
         </div>

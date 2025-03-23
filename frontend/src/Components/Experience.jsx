@@ -111,19 +111,16 @@ function Experience() {
           className="w-full mt-[15vh] md:h-[40vh] h-[80vh] bg-[#e4cfb9] rounded-bl-3xl rounded-tr-3xl grid sm:grid-row-2 md:grid-cols-2 gap-2"
         >
           <div className="px-3">
-            <h1 className="hanken text-[6vh] text-[#333326]">
-              Kala Street Wear
-            </h1>
+            <h1 className="hanken text-[6vh] text-[#333326]">FundNest</h1>
             <p className="inter-reg text-[2vh] text-[#333326] pl-[3.5vw] pb-[3.5vh] pr-[2vw]">
-              KalaStreetWear is a modern e-commerce platform designed for
-              streetwear enthusiasts. Built with React, Supabase, and Tailwind
-              CSS, it offers features like user authentication, dynamic product
-              listings, a cart system, and secure backend integration. The
-              platform provides a responsive, mobile-first design for seamless
-              shopping experiences across devices.
+              The Future of Startup Investment & Growth FundNest is a next-gen
+              platform where entrepreneurs can list, share, and even sell their
+              startups. It provides a transparent and structured system for
+              angel investors to buy shares, fund promising ventures, and be
+              part of their journey.
             </p>
             <a
-              href="https://github.com/DikshantJatrana/KalaStreetWear"
+              href="https://github.com/DikshantJatrana/User_Management"
               target="_blank"
               rel="noopener noreferrer"
               className="px-2 py-1 ml-[3.5vw] hanken text-[2vh] bg-[#333326] text-right rounded-xl text-[#e4cfb9] inline-flex items-center gap-1"
